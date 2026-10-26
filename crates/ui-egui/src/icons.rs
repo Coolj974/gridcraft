@@ -603,11 +603,11 @@ fn paint_with(p: &Painter, rect: Rect, icon: Icon, c: Color32, pal: &Palette) {
         Icon::TracePrecedents | Icon::TraceDependents => {
             let precedents = icon == Icon::TracePrecedents;
             if precedents {
-                g.line(&[(11.0, 5.0), (5.0, 11.0)], blue, 1.2);
-                g.poly(&[(3.5, 12.5), (4.5, 9.0), (7.0, 11.5)], blue);
+                g.line(&[(11.0, 5.0), (7.4, 8.6)], blue, 1.2);
+                g.poly(&[(5.6, 10.4), (6.3, 7.9), (8.1, 9.7)], blue);
             } else {
-                g.line(&[(5.0, 11.0), (11.0, 5.0)], blue, 1.2);
-                g.poly(&[(12.5, 3.5), (9.0, 4.5), (11.5, 7.0)], blue);
+                g.line(&[(5.0, 11.0), (8.6, 7.4)], blue, 1.2);
+                g.poly(&[(10.4, 5.6), (7.9, 6.3), (9.7, 8.1)], blue);
             }
             g.circle(4.0, 12.0, 2.2, Some(blue), None);
             g.circle(12.0, 4.0, 1.4, Some(green), None);
